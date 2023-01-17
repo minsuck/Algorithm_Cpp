@@ -39,13 +39,13 @@ void getDem(int m, int n){
         if(num[i] == true){
             int j = 2;
             // 3. 남은 수 중 i의 배수 모두 제거
-            while(i*j < n){
+            while(i*j <= n){
                 num[i*j] = false;
                 j++;
             }
         }
     }
-    for(int q=m; q<n; q++){
+    for(int q=m; q<=n; q++){
         if(num[q] == true){
             cout << q << "\n";
         }
